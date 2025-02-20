@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main_sec{
+    width: 100%;
+    height: 100vh;
+    /* background-color: orangered; */
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    padding: 0vw 10vw;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    overflow-x: hidden;
+}
+
+nav a{
+    font-size: 1vw;
+    text-decoration: none;
+    color:  white;
+    position: relative; 
+    padding: 0 5px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1.2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+   width: 100%;
+}
+
+a:hover{
+    color: white;
+   }
+   
+
+
+.center_nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+ font-size: 1.5vw;
+ color: white;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(255, 115, 0), rgba(255, 136, 0, 0.856));
+}
+
+.one h1{
+    margin-left: 30px;
+    font-size: 25vw;
+    font-family: "Poppins", serif;
+    font-weight: 490;
+    font-style: normal;
+    color: white;  
+    z-index: 2;
+}
+
+.one span{
+    margin-left: 30px;
+    font-size: 25vw;
+    font-family: "Poppins", serif;
+    font-weight: 490;
+    font-style: normal;
+    color: white;  
+    /* z-index: 3; */
+}
+
+#fanta{
+    width: 35%;
+    z-index: 2;
+    position: absolute;
+}
+
+#orange{
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 1;
+}
+
+#orange_splash{
+    position: absolute;
+    z-index: 3;
+    width: 25%;
+    top: 43%;
+    right: 26%;
+
+}
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #4d231c;
+}
+
+
+/* #leaf1{
+    top: 15%;
+    left: 5%;
+    position: absolute;
+   width: 11%;
+} */
+
+#leaf2{
+    top: 60%;
+    left: 80%;
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+}
+
+#orange_leaf{
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    left: 0%;
+    transform: rotate(-360deg);
+    /* z-index: 1; */
+}
+
+.two_left{
+ width: 50%;
+ height: 100%;
+ /* background-color: green; */
+}
+
+.two_left{
+       margin-left: 50px;
+       position: relative;
+       /* overflow-x: hidden; */
+        width: 40%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: repeat;
+        /* background-image: url("https://www.pngkit.com/png/full/85-854008_juice-splash-png.png"); */
+        background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23FAD961%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23F76B1C%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22b%22%3E%3Cpath fill=%22currentColor%22 d=%22M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z%22%2F%3E%3C%2FclipPath%3E%3Cfilter id=%22a%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22%2F%3E%3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22%2F%3E%3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.15 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23a)%22 clip-path=%22url(%23b)%22%3E%3Cpath fill=%22url(%23c)%22 d=%22M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+        
+.two_right{
+    width: 50%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+   
+.two_right h1{
+    color: #fff;
+    font-size: 5vw;
+    margin-bottom: 5vh;
+}
+
+.two_right p{
+color: #fff;
+font-size: 1vw;
+width: 80%;
+}
+
+.three{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+
+     background:  linear-gradient(60deg, rgb(210, 25, 0), rgba(241, 133, 10, 0.856), rgba(14, 196, 66, 0.856)); 
+    /* background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23FAD961%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23F76B1C%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22b%22%3E%3Cpath fill=%22currentColor%22 d=%22M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z%22%2F%3E%3C%2FclipPath%3E%3Cfilter id=%22a%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22%2F%3E%3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22%2F%3E%3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.15 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23a)%22 clip-path=%22url(%23b)%22%3E%3Cpath fill=%22url(%23c)%22 d=%22M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); */
+
+}
+
+.card{
+    position: relative;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10vh;
+    flex-direction: column;
+}
+
+
+.card h1{
+    margin-top: 40vh;
+    font-size: 3vw;
+}
+
+.card button{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    gap: 2vh;
+}
+
+.card button:hover{
+    background-color: white;
+    border: 1px solid orange;
+    /* background:  linear-gradient(60deg, rgb(210, 25, 0), rgba(241, 133, 10, 0.856), rgba(14, 196, 66, 0.856));  */
+
+    color: orange;
+    font-weight: 600;
+}
+
+
+#sprite{
+    top: -10%;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+#lime_slice{
+    top: -21%;
+    position: absolute;
+    left: 50%;
+    width: 22vw;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#lime_slice1{
+    position: absolute;
+    top: -21%;
+    left: 15%;
+    width: 18vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+#sprite1{
+   position: absolute;
+   width: 56vw;
+   top: -12%;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
+
+}
+
+
+/* #pepsi{
+   position: absolute;
+   width: 26%;
+   top: 12%;
+} */
+
+#ice_cubes{
+   position: absolute;
+   width: 30%;
+   top: 0%; 
+   right: 7%;
+}
+
+#resp_fanta{
+    width: 78vw;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: rotate(360deg);
+    left: -17%;
+    top: -8%;
+}
+
+#resp_orange{
+        width: 51vw;
+        left: 7%;
+        top: -14%;
+        right: 49%;
+}
+
+#resp_fanta,
+#resp_orange{
+    display: none;
+}
+
+
+@media (max-width:799px) {
+
+    nav a {
+        font-size: 3vw;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        padding: 0 5px;
+    }
+
+    .center_nav{
+        display: none;
+    }
+    .ri-menu-fill{
+       font-size: 5vw;
+       /* margin-right: 40vw; */
+   }
+   .one h1{
+    font-size: 28vw;
+    margin-right: 5vw;
+   }
+
+   #fanta{
+    left: 3.5034%;
+    top: 20%;
+    width: 90vw;
+   }
+
+   #orange{
+    width: 40%;
+    position: absolute;
+    top: 13%;
+    left: 16%;
+   }  
+
+   #orange_splash {
+    position: absolute;
+    z-index: 3;
+    width: 53%;
+    top: 53%;
+    right: -2%;
+}
+   #leaf2 {
+    top: 10%;
+    left: 73%;
+    position: absolute;
+    width: 30%;
+    z-index: 3;
+    }
+
+    #orange_leaf {
+        position: absolute;
+        width: 20%;
+        top: 36%;
+        left: -3%;
+        transform: rotate(-360deg);
+        /* z-index: 1; */
+    }
+
+    .two{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .two_left {
+            width: 112%;
+            height: 100%;
+            margin: 0 auto;
+            margin-left: -12vw;
+            margin-top: 20vh;
+    }
+  
+    .two_right {
+        width: 78%;
+        height: 100%;
+        /* background-color: #fff; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* text-align: center; */
+        margin: 0vw 11vw;
+    }
+
+    .two_right h1 {
+        color: #fff;
+        font-size: 8vw;
+        margin-bottom: 3vh;
+    }
+
+    .two_right p {
+        color: #fff;
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .three{
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .card{
+        width: 60vw;
+    }
+
+    .card h1 {
+        margin-top: 35vh;
+        font-size: 9vw;
+    }
+
+    .card button {
+        padding: 1vw 5vw;
+        font-size: 3vw;
+    }
+
+    #sprite1{
+        width: 150vw;
+        /* translate: none; */
+        rotate: none;
+        scale: none;
+        top: -1.9877%;
+    }
+
+    #lime_slice1{
+        width: 55vw;
+    translate: none;
+    rotate: none;
+    scale: none;
+    top: -14.9785%;
+    left: 5.0092%;
+    transform: translate(0px, 0px);
+    }
+
+    #sprite{
+        width: 62vw;
+        /* translate: none; */
+        rotate: none;
+        scale: none;
+        top: -1.9877%;
+    }
+
+    #lime_slice{
+        width: 65vw;
+        translate: none;
+        rotate: none;
+        scale: none;
+        top: -18.9785%;
+        left: -55.9908%;
+        transform: translate(50%, 0%);
+    }
+
+
+    #resp_orange{
+        width: 55vw;
+        translate: none;
+        rotate: none;
+        scale: none;
+        top: -14.9785%;
+        left: 5.0092%;
+        transform: translate(0px, 0px);
+    }
+    #resp_fanta{
+        /* position: absolute; */
+        width: 60vw;
+    }
+    #resp_fanta,
+    #resp_orange{
+    display: initial;
+     }
+} 
+
+/* Medium screens (tablets) */
+@media (min-width: 800px) and (max-width: 1199px) {
+    nav a {
+        font-size: 2vw;
+    }
+
+    .ri-menu-fill {
+        font-size: 3vw;
+    }
+
+    .one h1 {
+        font-size: 25vw;
+    }
+
+    #orange{
+        top: 25%;
+    }
+
+    #orange_splash {  
+        top: 53%;
+    }
+
+    #leaf2 {
+        top: 55%;
+        left: 83%;
+    }
+
+    #orange_leaf {
+        position: absolute;
+        width: 15%;
+        top: 26%;
+        left: 0%;
+        transform: rotate(-360deg);
+        /* z-index: 1; */
+    }
+    .two{
+        flex-direction: column;
+        height: 100vh;
+    }
+    /* Add other styles for medium screens */
+}
+
+/* Large screens (desktops) */
+@media (max-width: 1800px) and (min-width: 1200px) {
+    nav a {
+        font-size: 1.2vw;
+    }
+
+    .ri-menu-fill {
+        font-size: 2vw;
+    }
+
+    .one h1 {
+        font-size: 25vw;
+        font-weight: 490;
+    }
+    /* #orange {
+        width: 15%;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        z-index: 1;
+    }
+
+    #orange_leaf {
+        position: absolute;
+        width: 15%;
+        top: 23%;
+        left: 0%;
+        transform: rotate(-360deg);
+        z-index: 1;
+    } */
+
+    /* .two{
+        flex-direction: column;
+        height: 100vh;
+    } */
+
+}
+
+@media (min-width: 150px) and (max-width: 798px) {
+    nav a {
+        font-size: 3vw;
+    }
+
+    .ri-menu-fill {
+        font-size: 2vw;
+    }
+
+    .one h1 {
+        font-size: 25vw;
+        font-weight: 490;
+    }
+
+    .two{
+        flex-direction: column;
+        height: 100vh;
+    }
+}

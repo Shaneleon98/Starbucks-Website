@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="http://pluspng.com/img-png/coca-cola-png-coca-cola-logo-png-transparent-3632.png" alt="">
+        </div>
+        <nav>
+            <a href="Home.html">Shop Now</a>
+            <i class="fa-solid-bars" id="toggle"></i>
+        </nav>
+    </header>
+    <section class="home" id="home">
+     <p>Refreshing <span> <Br>The World</Br></span></p>
+     <img src="https://www.nicepng.com/png/full/255-2551087_cold-drinks-bottle-png.png" alt="coca cola" class="bottle">
+     <img src="https://www.pngkey.com/png/full/3-32512_ice-cube-transparent-background-ice-png.png" class="ice-cube">
+     <img src="http://clipart-library.com/images_k/transparent-ice/transparent-ice-22.png" alt="" class="c1">
+     <img src="http://clipart-library.com/images_k/transparent-ice/transparent-ice-22.png" alt="" class="c2">
+
+    </section>
+
+    <script>
+        gsap.from('.bottle', 1.8, {opacity:1,rotate:-30, y:-1000, ease:"expo.out",delay:0.5})
+        gsap.from('p', 1.8,{opacity:0, scale: 3.5, ease: "expo.out", delay: 0.5})
+
+gsap.from('header', 1.8,{opacity:0, y:-300, ease: "expo.out", delay: 0.5})
+
+gsap.from('.ice-cube', 1.0, {x:-1000, ease: "expo.out", delay: 0.0})
+
+gsap.from('.c2', 1.8, {x:1000, ease: "expo.out", delay: 0.4})
+
+// gsap.from('.c3', 1.8,{x:1000, ease: "expo.out", delay: 0.})
+
+gsap.from('.c1', 1.8,{x:-1000, y:-1000, ease: " expo.out", play: 0.45})
+
+// gsap.from('.c4', 1.8, {:1000, y:-1000, ease: "expo.out", delay: 0.5})
+   
+   </script>
+</body>
+</html>
